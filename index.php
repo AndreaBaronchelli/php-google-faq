@@ -69,10 +69,14 @@
         <?php foreach ($faqs as $faq) { ?>
         <section>
             <h2><?php echo $faq['question'] ?></h2>
-            <?php $paragraphs = explode('STOP!', $faq['answer']);
-                foreach($paragraphs as $paragraph) { ?>
-            <p><?php echo $paragraph ?></p>
-            <?php } ?>
+            <?php 
+            $paragraphs = explode('STOP!', $faq['answer']);
+            foreach($paragraphs as $paragraph) { 
+                if(!empty($paragraph)) {
+                    echo '<p>' . $paragraph . '</p>';
+                }
+            };
+            ?>
         </section>
         <?php } ?>
     </main>

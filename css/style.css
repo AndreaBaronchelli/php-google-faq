@@ -112,6 +112,10 @@ main section {
     margin-bottom: 50px;
 }
 
+main section p {
+    margin-bottom: 2rem;
+}
+
 /* FOOTER */
 footer {
     background-color: #f5f5f5;

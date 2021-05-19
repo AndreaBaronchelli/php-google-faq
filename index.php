@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+     <!-- ICONS -->
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous'/>
     <title>Google Faq</title>
 </head>
 <body>
@@ -38,13 +42,35 @@
     ?>
     
     <!-- HEADER -->
-    <header></header>
+    <header>
+        <div class="header-top">
+            <div class="left">
+                <a href="#"><img src="./img/Google-Logo.png" alt="Google Logo"></a>
+                <h2>Privacy e Termini</h2>
+            </div>
+            <div class="right">
+                <a href="#"><i class="fas fa-th"></i></a>
+                <div class="account"><a href="#"><img src="./img/account.png" alt=""></a></div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Introduzione</a></li>
+                <li><a href="#">Norme sulla privacy</a></li>
+                <li><a href="#">Termini di servizio</a></li>
+                <li><a href="#">Tecnologie</a></li>
+                <li><a href="#">Domande frequenti</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <main>
+    <main class="container">
         <!-- Fill the main section with php -->
         <?php foreach ($faqs as $faq) { ?>
-        <h2><?php echo $faq['question'] ?></h2>
-        <p><?php echo $faq['answer'] ?></p>
+        <section>
+            <h2><?php echo $faq['question'] ?></h2>
+            <p><?php echo $faq['answer'] ?></p>
+        </section>
         <?php } ?>
     </main>
 

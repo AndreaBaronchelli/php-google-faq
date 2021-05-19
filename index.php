@@ -45,8 +45,8 @@
     <header>
         <div class="header-top">
             <div class="left">
-                <a href="#"><img src="./img/Google-Logo.png" alt="Google Logo"></a>
-                <h2>Privacy e Termini</h2>
+                <div class="logo"><a href="#"><img src="./img/Google-Logo.png" alt="Google Logo"></a></div>
+                <h3>Privacy e Termini</h3>
             </div>
             <div class="right">
                 <a href="#"><i class="fas fa-th"></i></a>
@@ -75,6 +75,23 @@
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <ul>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Tutto su Google</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Termini</a></li>
+            </ul>
+            <div class="languages">
+                <i class="fas fa-flag"></i>
+                <select name="languages">
+                    <option value="Italian">Italiano</option>
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                </select>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
